@@ -4,6 +4,7 @@ export default function Player() {
   const [inputPlayerName,setinputPlayerName]=useState(null);
   function handleClick(){
     setinputPlayerName(playerName.current.value);
+    playerName.current.value="";
   }
   return (
     <section id="player">
